@@ -30,7 +30,7 @@ const Home = () => {
                <form  className={styles.form} role="form" onSubmit={handleSubmit(submitForm)}>
 
                     <input type="text" placeholder="Sender" name='user_name' {...register('user_name')} className="form-control"  required/>
-                    <input type="text" placeholder="email" name='email' {...register('email')} className="form-control" required/>
+                    <input type="email" placeholder="email" name='email' {...register('email')} className="form-control" required/>
                     <input type="text" placeholder="subject" name='subject' {...register('subject')} className="form-control" required/>
                     <textarea cols="30" rows="10" className="form-control" name="message" {...register('message')} placeholder="message" required></textarea>
                     <button className={`${styles.button} form-control`}>Send Message</button>
